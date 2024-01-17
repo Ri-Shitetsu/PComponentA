@@ -70,10 +70,25 @@ def decom(file,tar=-1,pc1=1,pc2=2):
   ax1.set_ylabel(f"PComponent-{pc2}")
   for i in range(len(list(y.unique()))):
     ax1.scatter(x0[i][0],x0[i][1],label=list(y.unique())[i])
+#  plt.show()
+  return fig
+
+def main():
+  fig = decom(sys.argv[1],
+              -1 if sys.argv[2] == "-1" else int(sys.argv[2]),
+              int(sys.argv[3]) if len(sys.argv) == 5 else 1,
+              int(sys.argv[4]) if len(sys.argv) == 5 else 2)
+  fig.savefig('result.png')
   plt.show()
   
+if __name__ == "__main__":
+  main()
 
-decom(sys.argv[1],
-      -1 if sys.argv[2] == "-1" else int(sys.argv[2]),
-      int(sys.argv[3]) if len(sys.argv) == 5 else 1,
-      int(sys.argv[4]) if len(sys.argv) == 5 else 2)
+  
+
+
+
+# decom(sys.argv[1],
+#       -1 if sys.argv[2] == "-1" else int(sys.argv[2]),
+#       int(sys.argv[3]) if len(sys.argv) == 5 else 1,
+#       int(sys.argv[4]) if len(sys.argv) == 5 else 2)
