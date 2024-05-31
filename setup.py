@@ -5,8 +5,8 @@ with open("README.md", "r", encoding="utf-8") as fh:
     long_description = fh.read()
 
 setuptools.setup(
-    name="decom",
-    version="0.0.1",
+    name="PComponentA",
+    version="0.0.3",
     author="Ri Shitetsu",
     author_email="/////",
     description="/////",
@@ -14,7 +14,7 @@ setuptools.setup(
     long_description_content_type="text/markdown",
     url="https://github.com/Ri-Shitetsu/Decom",
     project_urls={
-        "Bug Tracker": "https://github.com/Ri-Shitetsu/Decom",
+        "Bug Tracker": "https://github.com/Ri-Shitetsu/PComponentA",
     },
     classifiers=[
         "Programming Language :: Python :: 3",
