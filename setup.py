@@ -12,7 +12,7 @@ setuptools.setup(
     description="/////",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/Ri-Shitetsu/Decom",
+    url="https://github.com/Ri-Shitetsu/PComponentA",
     project_urls={
         "Bug Tracker": "https://github.com/Ri-Shitetsu/PComponentA",
     },
@@ -22,12 +22,12 @@ setuptools.setup(
         "Operating System :: OS Independent",
     ],
     package_dir={"":"src"},
-    py_modules=['decom'],
+    py_modules=['PComponentA'],
     packages=setuptools.find_packages(where="src"),
     python_requires=">=3.7",
     entry_points={
         'console_scripts':[
-            'decom = decom:main'
+            'PComponentA = PComponentA:main'
         ]
     },
 )
