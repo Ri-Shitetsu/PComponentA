@@ -17,9 +17,11 @@ Dataset used : Iris Species (https://www.kaggle.com/datasets/uciml/iris) <br>
 ``` sh
 % PcomponentA iris.csv -1 1 2
 ```
-The programme will print the total number of principal components and return a pop-up window of the graph
+The programme will print the total number of principal components of the dataset and return a pop-up window of the graph
 ``` sh
 Number of components : 2
 ```
+![Sample](https://github.com/Ri-Shitetsu/PComponentA/blob/main/sample.png)
+
 
 
